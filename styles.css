@@ -1,0 +1,357 @@
+
+   
+
+.courier-prime-regular {
+    font-family: "Courier Prime", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  
+        body, p, ul, li, a, header, nav, footer {
+            margin: 0;
+            padding: 0;
+            font-size: large;
+            font-family: 'Courier Prime', monospace;
+        }
+        h4 {
+            margin: 0;
+            font-size: x-large;
+
+        }
+
+        .gallery > img.full {
+            position:fixed; top: 0; left: 0; z-index: 999;
+            width: 100vw;
+            object-fit: scale-down;
+            background: rgba(0, 0, 0, 0.5);
+          }
+
+
+        body {
+            background-color: #d16d0fef; /* khaki */
+            color: #000000;  /* dark slate gray */
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            
+            height: 100%;
+            width: 100%;
+            position: relative;
+            min-height: 100%;
+           
+        }
+
+        a {
+            text-decoration: none;
+            color: #8b4513; /* saddle brown */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Centering container */
+        .container {
+            width: 1100px;
+            margin-top: 60px;
+            border: 2px solid #575454; /* dark slate gray */
+            background-color: #f0e3cb; /* wheat */
+            padding: 5px;
+            box-shadow:  10px 10px rgb(0, 0, 0);
+            min-height: 400px;
+            
+        
+        }
+
+        /* Header */
+        header {
+            color: #000000; /* dark slate gray */
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px dashed #000000; /* dark slate gray */
+        }
+
+        /* Navigation */
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 15px;
+            
+            
+        }
+        .block{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table{
+            table-layout: fixed;
+            width: 100%;
+            border-spacing: 5px;
+            font-size: large;
+        }
+        th{
+            padding: 15;
+        }
+        td{
+            padding: 25;
+            
+        }
+
+        /* Sidebar */
+        aside {
+            
+            flex-basis: 25%;
+            padding: 10px;
+            border-right: 2px dashed #000000; /* dark slate gray */
+            max-width: auto;
+            min-width: 250;
+            
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            border-top: 2px dashed #000000; /* dark slate gray */
+        }
+
+        
+        /* Main content */
+        main {
+        
+            padding: 35px;
+            margin: 20;
+            background-color: #f0e3cb;
+            position: relative; /* Set main as the positioning context */
+            height: auto;
+            margin-bottom: 50;
+            
+        
+        }
+
+        main > section:not(#home) {
+            padding: 15px; /* Padding for sections, excluding #home */
+        }
+
+   
+        main img, aside img {
+            width: 70%;
+            display: flex;
+            align-self: center;
+        }
+
+        /* Default all sections to be hidden */
+        section {
+            background-color: #f0e3cb;
+            opacity: 0;
+            visibility: hidden;
+            position:absolute;
+            
+            top: 15;
+            left: 10; /* Adjusted to account for main's padding */
+            right: 10px; /* Adjusted to account for main's padding */
+            bottom: 10px; /* Adjusted to account for main's padding */
+            margin-bottom:10px;
+            
+        
+            
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+        col {
+            display: table-column;
+        
+        }
+
+        body:target section#home {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Show #home by default. It remains in the flow so it doesn't overlay anything. */
+        section#home {
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            padding: 15px;
+        }
+
+        /* Show targeted sections, with a higher z-index to ensure they overlay #home */
+        section:target {
+            opacity: 1;
+            visibility: visible;
+            z-index: 3;
+        }
+
+       
+
+        
+
+        img {
+
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            border: 3px inset #050505;
+          }
+        
+          a.link{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: normal;
+            padding: 5px;
+          }
+          
+          a.link:link{
+            color: #000000;
+            text-decoration: none;
+          }
+          
+          a.link:visited{
+            color: maroon;
+            text-decoration: none;
+          }
+          
+          a.link:hover{
+            color: rgb(255, 10, 10);
+            text-decoration: none;
+            -webkit-transform: scale(2);
+            transform: scale(1.2);
+          }
+          
+          a.link:active{
+            color: maroon;
+            text-decoration: none;
+          }
+
+
+          .btn {
+            background: #7C7C7C;
+            border-bottom: 6px inset rgba(0,0,0,.5);
+            border-left: 6px inset rgba(0,0,0,.5);
+            border-right: 6px inset rgba(255,255,255,.5);
+            border-top: 6px inset rgba(255,255,255,.5);
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 2.2rem;
+            margin: 1rem;
+            min-width: 200px;
+            padding: .5rem;
+            text-transform: uppercase;
+            width: auto;
+            
+            &:focus,
+            &:hover {
+                background: #BCBCBC;
+            }
+            }
+
+
+          .gallery {
+            /* (A1) GRID LAYOUT - 3 PER ROW */
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          
+            /* (A2) OPTIONAL */
+            grid-gap: 10px;
+            max-width: auto;
+            padding: 10px; margin: 1 auto;
+            
+            
+          }
+          
+          /* (PART B) IMAGES */
+          .gallery > img {
+            width: 100%;
+            transition: all 0.3s;
+            border-style: solid;
+          }
+          
+          /* (PART C) SMALL SCREENS - 2 PER ROW */
+          @media screen and (max-width:640px) {
+            .gallery {
+              grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+          }
+          
+          /* (PART D) ENLARGE ON MOUSE HOVER */
+          .gallery > img:hover:not(.full) {
+            transform: scale(1.1);
+          }
+
+          
+
+          @media screen and (max-width: 640px) {
+            .content-wrapper {
+            max-width: 100%;
+            
+            display: block; /* Stops it from floating */
+            margin-left: auto; /* Ensures that it is centered */
+            margin-right: auto;
+            margin-bottom: 25px; /* Space between the stacked elements */
+            
+        
+            
+            }
+
+            main{
+                padding: 0px;
+                padding-top: 25px;
+                padding-bottom: 20;
+                min-height: anchor-size(height);
+            }
+            
+            aside{
+                border-bottom-width: 2px;
+                border-bottom-style: dashed;
+                border-right-width: 0px;
+                max-width: auto;
+            }
+          }
+
+          
