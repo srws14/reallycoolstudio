@@ -1,3 +1,12 @@
+    @font-face {
+        font-family: "digi";
+        src: url(/studio3/fonts/DIGIFIT.TTF);
+        ;
+    }
+
+    .digi{
+        font-family:"digi"
+        }
 
    
 
@@ -24,8 +33,6 @@
     font-weight: 700;
     font-style: italic;
   }
-  
-  
         body, p, ul, li, a, header, nav, footer {
             margin: 0;
             padding: 0;
@@ -47,7 +54,7 @@
 
 
         body {
-            background-color: #d16d0fef; /* khaki */
+            background-color: #CA5310; /* khaki */
             color: #000000;  /* dark slate gray */
             font-size: 16px;
             line-height: 1.6;
@@ -64,7 +71,7 @@
 
         a {
             text-decoration: none;
-            color: #8b4513; /* saddle brown */
+            color: #CA5310; /* saddle brown */
         }
 
         a:hover {
@@ -92,6 +99,32 @@
             border-bottom: 2px dashed #000000; /* dark slate gray */
         }
 
+        div.scrolling-limit{
+            
+            height: 50px;
+           
+            overflow:hidden;
+            
+            
+          }
+          
+          div.scrolling{
+            position: relative;
+            -webkit-animation: scroll 8s infinite linear;;
+            -moz-animation: scroll 8s infinite linear;
+            -o-animation: scroll 8s infinite linear;
+            animation: scroll 8s infinite linear;
+          }
+          
+          @keyframes scroll{
+              0%   {left: 800px;}
+              100% {left: -800px;}
+          }
+          @-webkit-keyframes scroll{
+              0%   {left: 800px;}
+              100% {left: -800px;}
+          }
+
         /* Navigation */
         nav {
             margin: 10px 0;
@@ -114,6 +147,7 @@
             margin-top: 15px;
             
             
+            
         }
         .block{
             margin-left: auto;
@@ -127,11 +161,11 @@
             font-size: large;
         }
         th{
-            padding: 15;
+            padding: 10;
+            
         }
         td{
             padding: 25;
-            
         }
 
         /* Sidebar */
@@ -168,7 +202,7 @@
         }
 
         main > section:not(#home) {
-            padding: 15px; /* Padding for sections, excluding #home */
+            padding: 20px; /* Padding for sections, excluding #home */
         }
 
    
@@ -216,7 +250,7 @@
             opacity: 1;
             visibility: visible;
             position: static;
-            padding: 15px;
+            padding: 16px;
         }
 
         /* Show targeted sections, with a higher z-index to ensure they overlay #home */
@@ -251,19 +285,19 @@
           }
           
           a.link:visited{
-            color: maroon;
+            color: rgb(78, 47, 6);
             text-decoration: none;
           }
           
           a.link:hover{
-            color: rgb(255, 10, 10);
+            color: rgb(#d16e11ef);
             text-decoration: none;
             -webkit-transform: scale(2);
             transform: scale(1.2);
           }
           
           a.link:active{
-            color: maroon;
+            color: rgb(#d16d0fef);
             text-decoration: none;
           }
 
@@ -285,10 +319,7 @@
             text-transform: uppercase;
             width: auto;
             
-            &:focus,
-            &:hover {
-                background: #BCBCBC;
-            }
+        
             }
 
 
@@ -324,12 +355,19 @@
             transform: scale(1.1);
           }
 
+          .gallery > img.full {
+            position: fixed; top: 0; left: 0; z-index: 999;
+            width: 100vw; height: 100vh;
+            
+            object-fit:scale-down;
+            background: rgba(0, 0, 0, 0.5);
+          }
+
           
 
           @media screen and (max-width: 640px) {
             .content-wrapper {
-            max-width: 100%;
-            
+            max-width: 90%;
             display: block; /* Stops it from floating */
             margin-left: auto; /* Ensures that it is centered */
             margin-right: auto;
@@ -353,5 +391,4 @@
                 max-width: auto;
             }
           }
-
-          
+       

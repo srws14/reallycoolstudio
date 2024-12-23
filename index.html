@@ -1,6 +1,6 @@
 <head>
     
-    <title>HIJINX STUDIO</title>
+    <title>electriquetech.net</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,9 @@
 
 <script type="text/javascript">
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "rehersal", {origin:"https://cal.com"});
-  Cal.ns.rehersal("ui", {"theme":"light","styles":{"branding":{"brandColor":"#d16d0"}},"hideEventTypeDetails":false,"layout":"week_view"});
-  
+Cal("init", "5-hour-rehearsal", {origin:"https://cal.com"});
+Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#292929"},"dark":{"cal-brand":"#ba7b19"}},"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
   </script>
 </head>
 <body>
@@ -64,12 +64,23 @@ Cal("init", "rehersal", {origin:"https://cal.com"});
             </aside>
           <main>
             <section id="home" class="active-section">
-                <h1 align="center">Sydneys most fun recording Studio</h1>
-                <p>Located in the heart of the innerwest, hijinx is birthed from the guiding belief that making noise and art should be as acessable as possible. Pairing some ofun gear with the finest in digital </p><br>
-                <div style="padding: 5;">
+
+              <img src="photos/text light to dark banner b.png" style="border: 0; padding:0; scale: 1;">
+              
+              <div class="scrolling-limit">
+                <div class="scrolling" >
+                  <div style="font-family: digi;"><h1>
+                  recording studio
+                  </div>                
+                </div>
+              </div>
+             
+                <h1 align="center">Sydneys most fun music Studio</h1>
+                <p>Located in the heart of the innerwest, our studio is birthed from the guiding belief that making noise and art should be as acessable as possible. Pairing some of the most fun vintage gear with a modern workflow to bring your song to life.   </p><br>
+                <div >
                 <table style="color: antiquewhite; column-gap: 55px; columns: 2;" >
                   <colgroup>
-                    <col span="2" style="background: rgb(34, 27, 19)" >
+                    <col span="2" style="background: rgb(61, 36, 7)" >
                   </colgroup>
                   
                   <tr>
@@ -77,16 +88,16 @@ Cal("init", "rehersal", {origin:"https://cal.com"});
                     <th><h4>REHEARSAL ROOM</th>
                   </tr>
                   <tr>
-                    <td align="center"  style="">professional recording with a wide range of instuments. multi track tape avalaible </td>
-                    <td align="center">a 24/7, affordable, comfortable space for all your loud needs.<br><a link="#booking" >BOOK NOW<br></td>
+                    <td align="center"><i>professional recording with a wide range of instuments. multi track tape avalaible </td>
+                    <td align="center"><i>a 24/7, affordable, comfortable space for all your loud needs.<br><a href="#booking" >BOOK NOW<br></td>
                   </tr>
                   <tr>
                     <th><h4>MIXING & MASTERING</th>
                     <th><h4>PRODUCTION</th>
                   </tr>
                   <tr>
-                    <td align="center">high quality mixing.  trust bro </td>
-                    <td align="center">got the song but need the spice? from band session ensemble arragments we can make your track come alive</td>
+                    <td align="center"><i>high quality mixing.  trust bro. listen <a href="#listen">here </td>
+                    <td align="center"><i>got the song but need the spice? from band session ensemble arragments we can make your track come alive</td>
                   </tr>
                   </table>
                 </div>
@@ -95,9 +106,10 @@ Cal("init", "rehersal", {origin:"https://cal.com"});
             </section>
             <section id="about">
             
-            <div><h1>COOL THING</h1></div>
-            born in 2022 hijinx has been constantly evolving. from shabby officespace through dust and cluter into the vibrant warm space it is today.
+            <div><h1>bit of banter</h1></div>
+            born in 2022 our space has been constantly evolving. from shabby officespace through dust and cluter into the vibrant warm space it is today.
             <br> our focus has been to ...<br>
+            
             together lets make sum sic music
             <h3 align="center">IMAGE GALLERY</h3>
           
@@ -127,75 +139,69 @@ Cal("init", "rehersal", {origin:"https://cal.com"});
 
               
               <div align="center">
-              <a href=`data-cal-link="spencer-standish-ijay1t/rehersal"`, `data-cal-namespace="rehersal" ,`data-cal-config='{"layout":"month_view"}'`><img src="gifs/book.gif" ></a>
+              <a data-cal-link="electriquetech"; `data-cal-namespace="electriquetech"; `data-cal-config='{"layout":"month_view","theme":"light"}'><img style="border: 0;" src="gifs/book.gif" ></a>
               <div>
               
             </section>
             <section id="gear">
-              ahah
+              <h3 style="text-align: center;">click below to view the pdf
               <img src="gifs/Gear.gif" style="border: 0; max-width: 200px;">
 
             </section>
 
             <section id="people">
+              photos + bio
+            </section>
 
-
+            <section id="listen">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0y3GFFOiegb53cofIYNGqB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
 
             <section id="rates">
               
-              <h1 align="center">BEST PRICES IN TOWN</h1>
+              <h2 align="center" class="digi">BEST PRICES IN TOWN</h2>
   
               <div >
-              <table style="background: rgb(34, 27, 19); color: antiquewhite; border-width: 2px; border-color: antiquewhite;" >
+              <table style="background: rgb(#5A3D2B); color: antiquewhite; border-width: 2px; border-color: antiquewhite;" >
+              <tr><th></tr>
               <tr>
                 <th><h1>SERVICE</th>
-                <th><h1>rate</th>
+                <th><h1>RATE</th>
               </tr>
               <tr>
                 <td>
                   REHERSAL HRLY<br><a #booking>book now</a>
                 </td>
-                <td align="center">25ph</td>
+                <td align="center"><i>25ph</td>
               </tr>
               <tr>
                 <td>
                   RECORDING HRLY<br>(not inculding engineer)
                 </td>
-                <td align="center">30ph</td>
+                <td align="center"><i>30ph</td>
               </tr>
               <tr>
                 <td>
                   ENGINEER HRLY
                 </td>
-                <td align="center">40ph</td>
+                <td align="center"><i>40ph</td>
               </tr>
               <tr>
                 <td>
-                  RECORDING DAY RATE<BR><p> all 24 hours<img  src="gifs/best.gif" style="min-width: 120px; border: 0;"></p>
+                  FACILITY DAY RATE<BR><p> all 24 hours <br><img align="left" src="gifs/best.gif" style="width: 140px; border: 0;  "></p>
                 </td>
-                <td align="center">250PD</td>
+                <td align="center"><i>250PD</td>
               </tr>
               <tr>
                 <td>
-                <h3>BUNDLE DEALS</h3h3>
+                <h3>BUNDLE DEALS</h3>
+                send us a email to get the best rate for multiple days 
                 </td>
                 <td align="center">$$$</td>
               </tr>
-              <tr>
-                <td>
-                  <h4>SINGLE package</h4><br>1 day tracking and mixed
-                </td>
-                <td align="center">$450</td>
-              </tr>
-              <tr>
-                <td>
-                  EP PACKAGE<br><p >3 full days of tracking ad up to 5 tacks mixed</p>
-
-                </td>
-                <td align="center">$999</td>
-              </tr>
-              </table>
+             
+              
+            </table>
               <br>
               
               <p align="center">Please get in touch to disuss a solution for you that's in your budget. Discounts offered for multiple day bookings.
@@ -212,15 +218,14 @@ Cal("init", "rehersal", {origin:"https://cal.com"});
         <footer>
           
          <h3> say hi!
-          <br>
-          hello@
+          <br><i><a href="mailto:hello@electriquetech.net" style="font-size:larger">hello@electriquetech.net</a>
           </br></h3>
           <div style="max-width: 50; display: inline;">
             <a type="link" href="" > <img src="gifs/insta.png" style="border: 0;"></a>
             <a type="link" href=""><img src="gifs/yt.png" style="border: 0;"></li></a>
           </div><br>
           <t>
-            © 2024. All rights reserved.
+            © 2025. All rights reserved.
             <br>
             705 parramatta road
             <br>
