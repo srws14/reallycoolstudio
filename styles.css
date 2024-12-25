@@ -119,7 +119,7 @@
             -moz-animation: scroll 10s infinite linear;
             -o-animation: scroll 10s infinite linear;
             animation: scroll 10s infinite linear;
-            
+            width: 400px;
           }
           
           @keyframes scroll{
