@@ -1,11 +1,12 @@
     @font-face {
         font-family: "digi";
-        src: url(/studio3/fonts/DIGIFIT.TTF);
-        ;
+        src: url(/fonts/DIGIFIT.TTF);
+        src: url(fonts/Digifit.woff) format(woff);
+        src: url(/fonts/Digifit.woff2) format(woff2);
     }
 
     .digi{
-        font-family:"digi"
+        font-family: 'Digifit', monospace;
         }
 
    
@@ -39,6 +40,10 @@
             font-size: large;
             font-family: 'Courier Prime', monospace;
         }
+        h1{
+          font-size: xx-large;
+        }
+
         h4 {
             margin: 0;
             font-size: x-large;
@@ -54,14 +59,14 @@
 
 
         body {
-            background-color: #CA5310; /* khaki */
-            color: #000000;  /* dark slate gray */
+            background-color: #CA5310; 
+            color: #000000;  
             font-size: 16px;
             line-height: 1.6;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            
+
             height: 100%;
             width: 100%;
             position: relative;
@@ -71,38 +76,38 @@
 
         a {
             text-decoration: none;
-            color: #CA5310; /* saddle brown */
+            color: #CA5310; 
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        /* Centering container */
+        
         .container {
-            width: 1100px;
-            margin-top: 60px;
-            border: 2px solid #575454; /* dark slate gray */
-            background-color: #f0e3cb; /* wheat */
+            width: 1200px;
+            margin-top: 50px;
+            margin: 20;
+            border: 2px solid #575454; 
+            background-color: #f0e3cb; 
             padding: 5px;
-            box-shadow:  10px 10px rgb(0, 0, 0);
+            box-shadow:  10px 10px #442E20;
             min-height: 400px;
             
         
         }
 
-        /* Header */
+      
         header {
-            color: #000000; /* dark slate gray */
+            color: #000000; 
             padding: 10px;
             text-align: center;
-            border-bottom: 2px dashed #000000; /* dark slate gray */
+            border-bottom: 2px dashed #000000; 
         }
 
         div.scrolling-limit{
             
-            height: 50px;
-           
+            height: 70px;
             overflow:hidden;
             
             
@@ -110,19 +115,20 @@
           
           div.scrolling{
             position: relative;
-            -webkit-animation: scroll 8s infinite linear;;
-            -moz-animation: scroll 8s infinite linear;
-            -o-animation: scroll 8s infinite linear;
-            animation: scroll 8s infinite linear;
+            -webkit-animation: scroll 10s infinite linear;;
+            -moz-animation: scroll 10s infinite linear;
+            -o-animation: scroll 10s infinite linear;
+            animation: scroll 10s infinite linear;
+            
           }
           
           @keyframes scroll{
-              0%   {left: 800px;}
-              100% {left: -800px;}
+              0%   {left: 700px;}
+              100% {left: -700px;}
           }
           @-webkit-keyframes scroll{
-              0%   {left: 800px;}
-              100% {left: -800px;}
+              0%   {left: 700px;}
+              100% {left: -700px;}
           }
 
         /* Navigation */
@@ -159,42 +165,43 @@
             width: 100%;
             border-spacing: 5px;
             font-size: large;
+            
         }
         th{
             padding: 10;
-            
+
         }
         td{
             padding: 25;
         }
 
-        /* Sidebar */
+        
         aside {
             
             flex-basis: 25%;
             padding: 10px;
-            border-right: 2px dashed #000000; /* dark slate gray */
+            border-right: 2px dashed #000000; 
             max-width: auto;
             min-width: 250;
             
         }
 
-        /* Footer */
+        
         footer {
             margin-top: 20px;
             text-align: center;
             padding: 15px;
-            border-top: 2px dashed #000000; /* dark slate gray */
+            border-top: 2px dashed #000000; 
         }
 
         
-        /* Main content */
+       
         main {
         
             padding: 35px;
             margin: 20;
             background-color: #f0e3cb;
-            position: relative; /* Set main as the positioning context */
+            position: relative; 
             height: auto;
             margin-bottom: 50;
             
@@ -202,7 +209,7 @@
         }
 
         main > section:not(#home) {
-            padding: 20px; /* Padding for sections, excluding #home */
+            padding: 20px;
         }
 
    
@@ -212,7 +219,7 @@
             align-self: center;
         }
 
-        /* Default all sections to be hidden */
+
         section {
             background-color: #f0e3cb;
             opacity: 0;
@@ -277,29 +284,21 @@
             vertical-align: middle;
             font-size: normal;
             padding: 5px;
-          }
-          
-          a.link:link{
             color: #000000;
-            text-decoration: none;
-          }
-          
-          a.link:visited{
-            color: rgb(78, 47, 6);
-            text-decoration: none;
-          }
-          
-          a.link:hover{
-            color: rgb(#d16e11ef);
-            text-decoration: none;
-            -webkit-transform: scale(2);
-            transform: scale(1.2);
           }
           
           a.link:active{
             color: rgb(#d16d0fef);
             text-decoration: none;
           }
+
+          a.link:hover{
+            color: rgb(#5f5144ef);
+            text-decoration: none;
+            -webkit-transform: scale(2);
+            transform: scale(1.2);
+          }
+         
 
 
           .btn {
@@ -324,11 +323,8 @@
 
 
           .gallery {
-            /* (A1) GRID LAYOUT - 3 PER ROW */
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-          
-            /* (A2) OPTIONAL */
             grid-gap: 10px;
             max-width: auto;
             padding: 10px; margin: 1 auto;
@@ -344,7 +340,7 @@
           }
           
           /* (PART C) SMALL SCREENS - 2 PER ROW */
-          @media screen and (max-width:640px) {
+          @media screen and (max-width:600px) {
             .gallery {
               grid-template-columns: repeat(1, minmax(0, 1fr));
             }
