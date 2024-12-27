@@ -40,6 +40,10 @@
             font-size: large;
             font-family: 'Courier Prime', monospace;
         }
+        a {
+          overflow-wrap: break-word;
+          hyphens: manual;
+        }
         h1{
           font-size: xx-large;
         }
@@ -109,7 +113,7 @@
             
             height: 70px;
             overflow:hidden;
-            
+            width:100%
             
           }
           
@@ -119,6 +123,7 @@
             -moz-animation: scroll 10s infinite linear;
             -o-animation: scroll 10s infinite linear;
             animation: scroll 10s infinite linear;
+            width: 400px;
             
           }
           
@@ -342,7 +347,8 @@
           /* (PART C) SMALL SCREENS - 2 PER ROW */
           @media screen and (max-width:600px) {
             .gallery {
-              grid-template-columns: repeat(1, minmax(0, 1fr));
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+              max-width: 500;
             }
           }
           
