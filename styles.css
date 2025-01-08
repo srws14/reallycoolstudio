@@ -204,7 +204,9 @@
             
         }
 
-        
+        main:has(section:target#gear) {
+          height: 1560px; 
+        }
        
         main {
             padding: 35px;
@@ -221,9 +223,7 @@
             padding: 10px;
         }
 
-        main:has(section:target#gear) {
-          height: 1560px; /* Example: Increase height further on mobile */
-        }
+        
 
 
    
