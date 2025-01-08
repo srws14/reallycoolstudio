@@ -24,6 +24,28 @@ Cal("init", "5-hour-rehearsal", {origin:"https://cal.com"});
 Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#292929"},"dark":{"cal-brand":"#ba7b19"}},"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const mainElement = document.querySelector('main');
+      const targetSection = document.querySelector('section#gear');
+
+      // Check if the section with ID 'gear' is the target
+      if (window.location.hash === '#gear') {
+          mainElement.style.height = '1650px';
+      } else {
+          mainElement.style.height = ''; // Reset height when not targeted
+      }
+
+      // Listen for changes to the hash (in case it changes via user interaction)
+      window.addEventListener('hashchange', function() {
+          if (window.location.hash === '#gear') {
+              mainElement.style.height = '1560px';
+          } else {
+              mainElement.style.height = ''; // Reset height
+          }
+      });
+  });
+</script>
 
 </head>
 <body>
