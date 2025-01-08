@@ -208,6 +208,10 @@
           height: 1560px; 
         }
        
+        main#gear:target{
+          height: 1560px; 
+        }
+
         main {
             padding: 35px;
             margin: 20;
