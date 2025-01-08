@@ -96,8 +96,6 @@
             padding: 5px;
             box-shadow:  10px 10px #442E20;
             min-height: 400px;
-            
-        
         }
 
       
@@ -126,16 +124,20 @@
             
           }
           
-          @keyframes scroll{
-              0%   {left: 700px;}
-              100% {left: -700px;}
+          @keyframes scroll {
+            0% {
+              transform: translateX(700px);
+            }
+            100% {
+              transform: translateX(-700px);
+            }
           }
           @-webkit-keyframes scroll{
               0%   {left: 700px;}
               100% {left: -700px;}
           }
 
-        /* Navigation */
+    
         nav {
             margin: 10px 0;
             text-align: center;
@@ -150,13 +152,12 @@
             margin-right: 20px;
         }
 
-        /* Content Wrapper */
+        
         .content-wrapper {
             display: flex;
             justify-content: flex-start;
             margin-top: 15px;
             
-
         }
         .block{
             margin-left: auto;
@@ -178,6 +179,11 @@
             padding: 25;
         }
 
+        li {
+          padding-left: 1.28571429em;
+          text-indent: -1.28571429em;
+      }
+        
         
         aside {
             
@@ -194,26 +200,31 @@
             margin-top: 20px;
             text-align: center;
             padding: 15px;
-            border-top: 2px dashed #000000; 
+            border-top: 2px dashed #000000;
+            
         }
 
         
        
         main {
-        
             padding: 35px;
             margin: 20;
             background-color: #f0e3cb;
             position: relative; 
-            height: auto;
+            min-height: auto;
             margin-bottom: 50;
-            
-        
+            overflow: visible;
+            height: auto;
         }
 
         main > section:not(#home) {
-            padding: 20px;
+            padding: 10px;
         }
+
+        main:has(section:target#gear) {
+          height: 1560px; /* Example: Increase height further on mobile */
+        }
+
 
    
         main img, aside img {
@@ -228,7 +239,6 @@
             opacity: 0;
             visibility: hidden;
             position:absolute;
-            
             top: 15;
             left: 10; /* Adjusted to account for main's padding */
             right: 10px; /* Adjusted to account for main's padding */
@@ -363,9 +373,7 @@
             background: rgba(0, 0, 0, 0.5);
           }
 
-          
-
-          @media screen and (max-width: 640px) {
+          @media screen and (max-width: 660px) {
             .content-wrapper {
             max-width: 100%;
             display: block; /* Stops it from floating */
@@ -381,8 +389,15 @@
                 padding: 0px;
                 padding-top: 25px;
                 padding-bottom: 20;
-                min-height: anchor-size(height);
+                height: auto;
+
             }
+
+            main:has(section:target#gear) {
+              height: 2200px; /* Example: Increase height further on mobile */
+            }
+
+            
             
             aside{
                 border-bottom-width: 2px;
@@ -393,4 +408,5 @@
 
            
           }
+          
        
