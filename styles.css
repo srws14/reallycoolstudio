@@ -395,13 +395,13 @@
                 padding: 0px;
                 padding-top: 25px;
                 padding-bottom: 20;
-                height: 1700;
+                height: 1800;
 
             }
 
            
             main:has(section:target#gear) {
-              height: 2350px; /* Example: Increase height further on mobile */
+              height: 2400px; /* Example: Increase height further on mobile */
             } 
 
             li{
