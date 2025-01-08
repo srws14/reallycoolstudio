@@ -24,28 +24,6 @@ Cal("init", "5-hour-rehearsal", {origin:"https://cal.com"});
 Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#292929"},"dark":{"cal-brand":"#ba7b19"}},"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const mainElement = document.querySelector('main');
-      const targetSection = document.querySelector('section#gear');
-
-      // Check if the section with ID 'gear' is the target
-      if (window.location.hash === '#gear') {
-          mainElement.style.height = '1650px';
-      } else {
-          mainElement.style.height = ''; // Reset height when not targeted
-      }
-
-      // Listen for changes to the hash (in case it changes via user interaction)
-      window.addEventListener('hashchange', function() {
-          if (window.location.hash === '#gear') {
-              mainElement.style.height = '1560px';
-          } else {
-              mainElement.style.height = ''; // Reset height
-          }
-      });
-  });
-</script>
 
 </head>
 <body>
@@ -88,7 +66,7 @@ Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#2929
           </table>
             </aside>
           <main>
-            <section id="home" class="active-section">
+            <section id="home" >
 
               <img src="photos/banner.png" style="border: 0; padding:20; scale: 1.45;">
               
@@ -139,11 +117,13 @@ Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#2929
               <h1 align="center" class="digi" >who are we</h1>
               <div align="center" style="border-top: 2px dashed #000000"></div>
             <div style="border-bottom: 2px dashed #000000; padding-bottom: 20;"><h3>the story so far</h3>
-              <p>Established in 2022 on Dharug land, Electrique Technique’s mission is to provide a high quality, affordable studio to our beloved local music scene within Sydney. From our humble beginnings as a bare rehearsal room, we’ve slowly hand built our studio with love and character. Our ever-developing space and growing collection of vintage gear has a total life of its own, offering a distinctive character and particular flair to all recordings we make while providing a creative haven where anything goes. 
+              <p>Established in 2022 on Dharug land, Electrique Technique’s mission is to provide a high quality, affordable studio to our beloved local music scene within Sydney. From our humble beginnings as bare office space handbuilt into the dream recording and rehearseal spot for us and our friends.
+              With a passion for vintage electronics and unique sounds, our ever-developing space and growing collection of gear has amassed a total life of its own. Delivering a distinctive character and particular flair to all recordings we make; providing a creative haven where anything goes. 
                 <br><br>
-                Priding ourselves on the variety of genres that come through our doors, we’re focused on giving our artists as much creative freedom and expression as possible. Whilst providing the environment and expertise to fully realise their visions through their performance.
+                With a large variety of genres and talented personalities coming through our doors, we pride ourselves on creating an environment that’s comfortable for everyone to freely creatively express.
+                 Our technicians strive to give the greatest expertise in developing, recording, mixing, mastering and flexibility to fit exactly the vision of our artists. You can decide how hands on or hands off we are with any given element of the process.
                 <br><br>
-                Whether you’re looking to record your band, overdub some songs, track an ensemble, mess around on some keyboards, experiment hands on with old school gear or anything in between our studio is your place. With unlimited tea and coffee our studio is primed and ready to be your second loud home.
+                Whether you’re looking to record your band, overdub some songs, track an ensemble, mess around on some keyboards, experiment hands on with old school gear or anything in between our studio is your place. With unlimited tea and coffee our studio is primed and ready to be your second creative home.
               
             </div>
 
@@ -219,7 +199,7 @@ Cal.ns["5-hour-rehearsal"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#2929
             <li>EV PL 11
             <li>EV RE10
             <li>EV 635
-            <li>Bayer m88[
+            <li>Bayer m88
             <li>Grundig GDSM 202
             <li>Jeane Audio U87 clones
             <li>Sennheiser 80s 421

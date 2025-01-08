@@ -40,6 +40,11 @@
             font-size: large;
             font-family: 'Courier Prime', monospace;
         }
+
+        li{
+          font-size: 18px;
+        }
+
         a {
           overflow-wrap: break-word;
           hyphens: manual;
@@ -88,14 +93,13 @@
 
         
         .container {
-            width: 1200px;
+            max-width: 1200px;
             margin-top: 50px;
-            margin: 20;
+            margin: 50;
             border: 2px solid #575454; 
             background-color: #f0e3cb; 
             padding: 5px;
             box-shadow:  10px 10px #442E20;
-            min-height: 400px;
         }
 
       
@@ -157,7 +161,7 @@
             display: flex;
             justify-content: flex-start;
             margin-top: 15px;
-            
+          
         }
         .block{
             margin-left: auto;
@@ -221,6 +225,9 @@
             margin-bottom: 50;
             overflow: visible;
             height: auto;
+            display: flex;
+            flex-direction: column;
+            
         }
 
         main > section:not(#home) {
@@ -284,10 +291,6 @@
             z-index: 3;
         }
 
-       
-
-        
-
         img {
 
             max-width: 100%;
@@ -315,7 +318,6 @@
             -webkit-transform: scale(2);
             transform: scale(1.2);
           }
-         
 
 
           .btn {
@@ -393,15 +395,23 @@
                 padding: 0px;
                 padding-top: 25px;
                 padding-bottom: 20;
-                height: auto;
+                height: 1700;
 
             }
 
+           
             main:has(section:target#gear) {
-              height: 2200px; /* Example: Increase height further on mobile */
-            }
+              height: 2100px; /* Example: Increase height further on mobile */
+            } 
 
-            
+            li{
+              font-size: 17px;
+            }
+          
+            main:has(section:target#rates) {
+              height: 1600px; 
+              
+            } 
             
             aside{
                 border-bottom-width: 2px;
