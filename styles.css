@@ -9,6 +9,9 @@
         font-family: 'Digifit', monospace;
         }
 
+        :root {
+          color-scheme: light only;
+     }
    
 
 .courier-prime-regular {
