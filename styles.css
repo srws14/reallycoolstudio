@@ -1,9 +1,9 @@
-    @font-face {
-        font-family: "digi";
-        src: url(/fonts/DIGIFIT.TTF);
-        src: url(fonts/Digifit.woff) format(woff);
-        src: url(/fonts/Digifit.woff2) format(woff2);
-    }
+@font-face {
+  font-family: "digi";
+  src: url(/fonts/DIGIFIT.TTF) format("truetype"),
+       url(fonts/Digifit.woff) format("woff"),
+       url(/fonts/Digifit.woff2) format("woff2");
+}
 
     .digi{
         font-family: 'Digifit', monospace;
@@ -75,6 +75,7 @@
             color: #000000;  
             font-size: 16px;
             line-height: 1.6;
+            display: -webkit-flex; /* Safari support */
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -161,11 +162,12 @@
 
         
         .content-wrapper {
-            display:flex;
-            justify-content: flex-start;
-            margin-top: 15px;
-          
-        }
+          display: -webkit-flex; /* Safari */
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 15px;
+      }
+
         .block{
             margin-left: auto;
             margin-right: auto;
@@ -207,7 +209,7 @@
         }
 
         
-        footer {
+        footer {  
           position: relative;
         
             margin-top: 20px;
